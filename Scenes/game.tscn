@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b2k2m314e6e73"]
+
+[node name="Game" type="Node"]
+
+[node name="AudioManager" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="AudioManager"]
+
+[node name="GUI Container" type="CanvasLayer" parent="."]
+
+[node name="Level Container" type="Node2D" parent="."]
