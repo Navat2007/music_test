@@ -1,4 +1,7 @@
-[gd_resource type="AudioBusLayout" format=3 uid="uid://q7if6f3mo8sv"]
+[gd_resource type="AudioBusLayout" load_steps=2 format=3 uid="uid://q7if6f3mo8sv"]
+
+[sub_resource type="AudioEffectEQ" id="AudioEffectEQ_ikoir"]
+resource_name = "EQ"
 
 [resource]
 bus/1/name = &"SFX"
@@ -13,3 +16,5 @@ bus/2/mute = false
 bus/2/bypass_fx = false
 bus/2/volume_db = -8.00903
 bus/2/send = &"Master"
+bus/2/effect/0/effect = SubResource("AudioEffectEQ_ikoir")
+bus/2/effect/0/enabled = false
