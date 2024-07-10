@@ -18,6 +18,8 @@ config/icon="res://Art/treble-clef.svg"
 [autoload]
 
 EventBus="*res://Scripts/global/event_bus.gd"
+Storage="*res://Scripts/global/storage.gd"
+ServiceLocator="*res://Scripts/global/service_locator.gd"
 
 [rendering]
 

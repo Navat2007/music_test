@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://b2k2m314e6e73"]
+[gd_scene load_steps=4 format=3 uid="uid://b2k2m314e6e73"]
 
 [ext_resource type="Script" path="res://Scripts/game.gd" id="1_210at"]
-[ext_resource type="PackedScene" uid="uid://c6gur358lmj7q" path="res://Scenes/ui/cycle_bar.tscn" id="1_ijf4y"]
+[ext_resource type="PackedScene" uid="uid://b6sq08c6xrvo8" path="res://Scenes/ui/game_ui.tscn" id="2_e70lc"]
+[ext_resource type="Script" path="res://Scripts/managers/audio_manager.gd" id="2_unp06"]
 
 [node name="Game" type="Node"]
 script = ExtResource("1_210at")
 
 [node name="AudioManager" type="Node" parent="."]
+script = ExtResource("2_unp06")
 
 [node name="SFXPlayer" type="AudioStreamPlayer" parent="AudioManager"]
 max_polyphony = 10
@@ -14,32 +16,6 @@ bus = &"SFX"
 
 [node name="GUI Container" type="CanvasLayer" parent="."]
 
-[node name="Control" type="Control" parent="GUI Container"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="GUI Container/Control"]
-layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -1152.0
-offset_right = -1002.0
-offset_bottom = 150.0
-grow_horizontal = 0
-scale = Vector2(0.5, 0.5)
-theme_override_constants/margin_left = 16
-theme_override_constants/margin_top = 16
-theme_override_constants/margin_right = 16
-theme_override_constants/margin_bottom = 16
-
-[node name="CycleBar" parent="GUI Container/Control/MarginContainer" instance=ExtResource("1_ijf4y")]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
+[node name="Game UI" parent="GUI Container" instance=ExtResource("2_e70lc")]
 
 [node name="Level Container" type="Node2D" parent="."]

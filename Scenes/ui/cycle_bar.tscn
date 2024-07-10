@@ -31,4 +31,3 @@ tint_progress = Color(0.352941, 0.784314, 0.0862745, 1)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 4.0
-autostart = true
