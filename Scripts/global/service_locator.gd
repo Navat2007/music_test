@@ -1,5 +1,5 @@
 extends Node
 
-var GameInstance: Game;
-var SceneManagerInstance: SceneManager;
-var AudioManagerInstance: AudioManager;
+var GameInstance;
+var SceneManagerInstance;
+var AudioManagerInstance;

@@ -5,12 +5,12 @@ extends Node
 @export var musicPlayer: AudioStreamPlayer;
 
 @export var ui_audio: Dictionary = {
-	"click": preload("res://assets/audio/ui/click3.ogg"),
-	"switch": preload("res://assets/audio/ui/switch2.ogg"),
+	"click": preload("res://Audio/ui/click3.ogg"),
+	"switch": preload("res://Audio/ui/switch2.ogg"),
 };
 
 @export var music_list: Dictionary = {
-	"default": preload("res://Audio"),
+	#"default": preload("res://Audio"),
 };
 
 func _init():

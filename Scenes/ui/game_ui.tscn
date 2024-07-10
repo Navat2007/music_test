@@ -26,9 +26,7 @@ theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
 metadata/_edit_use_anchors_ = true
 
-[node name="CycleBar" parent="MarginContainer" node_paths=PackedStringArray("timer", "bar") instance=ExtResource("1_pnbut")]
+[node name="CycleBar" parent="MarginContainer" instance=ExtResource("1_pnbut")]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-timer = NodePath("")
-bar = NodePath("")

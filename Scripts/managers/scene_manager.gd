@@ -3,26 +3,20 @@ extends Node
 
 @export_group("UI scenes")
 @export var main_menu_gui_scene: PackedScene = preload("res://Scenes/ui/start_menu.tscn");
-@export var level_gui_scene: PackedScene = preload("res://scenes/ui/game_ui.tscn");
-@export var loading_screen: PackedScene = preload("res://scenes/ui/scene_transition_screen.tscn");
+@export var level_gui_scene: PackedScene = preload("res://Scenes/ui/game_ui.tscn");
+@export var loading_screen: PackedScene = preload("res://Scenes/ui/scene_transition_screen.tscn");
 
 @export_group("Level scenes")
 @export var levels: Dictionary = {
-	"village": "res://scenes/levels/village.tscn",
-	"cave": "res://scenes/levels/cave.tscn"
+	"main": "res://Scenes/levels/main_level.tscn",
 };
 
 enum Levels {
-	None,
-	Village,
-	Cave,
-	Crypt,
+	Main
 };
 
-const level_dictionary = {
-	Levels.Village: "village",
-	Levels.Cave: "cave",
-	Levels.Crypt: "crypt",
+const level_dictionary: Dictionary = {
+	Levels.Main: "main",
 };
 
 var current_level;

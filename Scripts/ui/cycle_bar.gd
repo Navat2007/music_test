@@ -1,6 +1,5 @@
 extends Control
 
-@export var timer: Timer
 @export var bar: TextureProgressBar
 
 @export var duration := 4.0

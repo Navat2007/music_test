@@ -1,9 +1,41 @@
-[gd_scene format=3 uid="uid://c1e433ug3lwg0"]
+[gd_scene load_steps=3 format=3 uid="uid://c1e433ug3lwg0"]
 
-[node name="Start menu" type="Control"]
+[ext_resource type="Script" path="res://Scripts/ui/start_menu.gd" id="1_6tfst"]
+[ext_resource type="Texture2D" uid="uid://rbd4qhnm6lnc" path="res://Art/illustration/7-goblins-music-band (1).jpg" id="1_60e0s"]
+
+[node name="Start menu" type="Control" node_paths=PackedStringArray("start_button")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_6tfst")
+start_button = NodePath("StartButton")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_60e0s")
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -118.5
+offset_top = -123.95
+offset_right = 118.5
+offset_bottom = -27.95
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 64
+text = "Играть"

@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/ui/cycle_bar.gd" id="1_kcn61"]
 [ext_resource type="Texture2D" uid="uid://bdu6gyauecxc7" path="res://Art/ui/progress-bar-frame.png" id="2_01nqd"]
 
-[node name="CycleBar" type="Control" node_paths=PackedStringArray("timer", "bar")]
+[node name="CycleBar" type="Control" node_paths=PackedStringArray("bar")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -12,7 +12,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_kcn61")
-timer = NodePath("Timer")
 bar = NodePath("TextureProgressBar")
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="."]
@@ -28,6 +27,3 @@ texture_over = ExtResource("2_01nqd")
 texture_progress = ExtResource("1_k64ug")
 tint_under = Color(0, 0, 0, 0.392157)
 tint_progress = Color(0.352941, 0.784314, 0.0862745, 1)
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 4.0

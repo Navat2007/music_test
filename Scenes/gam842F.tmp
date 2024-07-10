@@ -4,10 +4,8 @@
 [ext_resource type="Script" path="res://Scripts/managers/scene_manager.gd" id="2_oh2g4"]
 [ext_resource type="Script" path="res://Scripts/managers/audio_manager.gd" id="2_unp06"]
 
-[node name="Game" type="Node" node_paths=PackedStringArray("gui_container", "level_container")]
+[node name="Game" type="Node"]
 script = ExtResource("1_210at")
-gui_container = NodePath("GUI Container")
-level_container = NodePath("Level Container")
 
 [node name="SceneManager" type="Node" parent="."]
 script = ExtResource("2_oh2g4")
