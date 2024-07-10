@@ -1,5 +1,4 @@
-class_name AudioManager
-extends Node
+class_name AudioManager extends Node
 
 @export var audioPlayer: AudioStreamPlayer;
 @export var musicPlayer: AudioStreamPlayer;
