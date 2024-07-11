@@ -1185,12 +1185,10 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pgjme"]
-size = Vector2(186, 592)
+size = Vector2(180, 592)
 
-[node name="Taper" node_paths=PackedStringArray("animated_sprite", "click_area") instance=ExtResource("1_s4iwy")]
-animated_sprite = NodePath("AnimatedSprite2D")
+[node name="Taper" instance=ExtResource("1_s4iwy")]
 music_clip = ExtResource("2_owxtj")
-click_area = NodePath("Area2D")
 
 [node name="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_fjyh6")
@@ -1208,5 +1206,5 @@ libraries = {
 }
 
 [node name="CollisionShape2D" parent="Area2D" index="0"]
-position = Vector2(3, 1)
+position = Vector2(28, 1)
 shape = SubResource("RectangleShape2D_pgjme")
