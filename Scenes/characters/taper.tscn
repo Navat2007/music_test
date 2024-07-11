@@ -1196,7 +1196,7 @@ click_area = NodePath("Area2D")
 sprite_frames = SubResource("SpriteFrames_fjyh6")
 animation = &"ready"
 autoplay = "idle"
-frame_progress = 0.475806
+frame_progress = 0.919586
 
 [node name="Sprite2D" parent="." index="2"]
 visible = false

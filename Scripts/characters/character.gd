@@ -20,7 +20,6 @@ func _ready() -> void:
     click_area.input_event.connect(_on_click_area_input_event);
     EventBus.on_cycle_tick.connect(_on_cycle_tick);
 
-
     audio_player.stream = music_clip;
     animated_sprite.self_modulate = Color(0.176, 0.176, 0.176, 0.812);
 
@@ -32,8 +31,6 @@ func _on_click_area_input_event(_viewport, event, _shape_idx) -> void:
                 animated_sprite.self_modulate = Color(1.0, 1.0, 1.0, 1.0);
 
                 var start_frame: int = floori(Global.cycle_elapsed / time_per_frame) % total_frames;
-
-                prints("Start frame: " + str(start_frame));
 
                 animated_sprite.play("ready")
                 animated_sprite.set_frame(start_frame);

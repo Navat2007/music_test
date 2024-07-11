@@ -8,6 +8,7 @@ audio_player = NodePath("AudioStreamPlayer")
 animation_player = NodePath("AnimationPlayer")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+max_polyphony = 5
 bus = &"Music"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
