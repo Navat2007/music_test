@@ -1,7 +1,7 @@
 [gd_scene load_steps=299 format=3 uid="uid://bvogudb6kkmif"]
 
 [ext_resource type="PackedScene" uid="uid://hu8ildxogcid" path="res://Scenes/characters/character.tscn" id="1_s4iwy"]
-[ext_resource type="AudioStream" uid="uid://by4a2fsh6dlh3" path="res://Audio/characters/taper/taper.mp3" id="2_owxtj"]
+[ext_resource type="AudioStream" uid="uid://dpxtldrvsyol2" path="res://Audio/characters/taper.ogg" id="2_48gdk"]
 [ext_resource type="Texture2D" uid="uid://ny7wyhudqv7o" path="res://Art/characters/taper/tapper_idle.png" id="3_eu2l7"]
 [ext_resource type="Texture2D" uid="uid://dh2ybeev1q0iv" path="res://Art/characters/taper/tapper_play.png" id="4_yi7l2"]
 [ext_resource type="Texture2D" uid="uid://c7cqw4jekg8b0" path="res://Art/characters/taper/tapper_ready.png" id="5_0ma8g"]
@@ -2055,7 +2055,7 @@ _data = {
 size = Vector2(92, 296)
 
 [node name="Taper" instance=ExtResource("1_s4iwy")]
-music_clip = ExtResource("2_owxtj")
+music_clip = ExtResource("2_48gdk")
 
 [node name="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_fjyh6")

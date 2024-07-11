@@ -1,7 +1,8 @@
-[gd_scene load_steps=295 format=3 uid="uid://cenmsfgbb46ye"]
+[gd_scene load_steps=296 format=3 uid="uid://cenmsfgbb46ye"]
 
 [ext_resource type="PackedScene" uid="uid://hu8ildxogcid" path="res://Scenes/characters/character.tscn" id="1_i3nqg"]
 [ext_resource type="Texture2D" uid="uid://b4v78qriqb74v" path="res://Art/characters/acordionist/acordionist_idle.png" id="2_3gw5r"]
+[ext_resource type="AudioStream" uid="uid://0wfc1kwqnf4o" path="res://Audio/characters/acordionist.ogg" id="2_t8yvd"]
 [ext_resource type="Texture2D" uid="uid://ccv3jlxma72us" path="res://Art/characters/acordionist/acordionist_play.png" id="3_8ogq5"]
 [ext_resource type="Texture2D" uid="uid://c13qbm3gu2iro" path="res://Art/characters/acordionist/acordionist_ready.png" id="4_cely0"]
 
@@ -2043,6 +2044,7 @@ animations = [{
 size = Vector2(126, 169)
 
 [node name="Acordionist" instance=ExtResource("1_i3nqg")]
+music_clip = ExtResource("2_t8yvd")
 
 [node name="AnimatedSprite2D" parent="." index="1"]
 sprite_frames = SubResource("SpriteFrames_gvdou")
