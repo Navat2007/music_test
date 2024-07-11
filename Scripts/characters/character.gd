@@ -20,7 +20,11 @@ func _ready() -> void:
     click_area.input_event.connect(_on_click_area_input_event);
     EventBus.on_cycle_tick.connect(_on_cycle_tick);
 
-    audio_player.stream = music_clip;
+    if music_clip:
+        audio_player.stream = music_clip;
+    else:
+        print("No music clip provided for character: ", name);
+
     animated_sprite.self_modulate = Color(0.176, 0.176, 0.176, 0.812);
 
 func _on_click_area_input_event(_viewport, event, _shape_idx) -> void:
