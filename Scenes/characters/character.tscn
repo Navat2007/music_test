@@ -2,10 +2,12 @@
 
 [ext_resource type="Script" path="res://Scripts/characters/character.gd" id="1_x1qos"]
 
-[node name="Character" type="Node2D" node_paths=PackedStringArray("audio_player", "animation_player")]
+[node name="Character" type="Node2D" node_paths=PackedStringArray("audio_player", "animation_player", "animated_sprite", "click_area")]
 script = ExtResource("1_x1qos")
 audio_player = NodePath("AudioStreamPlayer")
 animation_player = NodePath("AnimationPlayer")
+animated_sprite = NodePath("AnimatedSprite2D")
+click_area = NodePath("Area2D")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 max_polyphony = 5
