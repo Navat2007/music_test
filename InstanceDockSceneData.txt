@@ -1,0 +1,16 @@
+[{
+"name": "Characters",
+"scenes": [{
+"scene": "res://Scenes/characters/beeper.tscn"
+}, {
+"scene": "res://Scenes/characters/acordionist.tscn"
+}, {
+"scene": "res://Scenes/characters/contrbasser.tscn"
+}, {
+"scene": "res://Scenes/characters/bombaper.tscn"
+}, {
+"scene": "res://Scenes/characters/taper.tscn"
+}, {
+"scene": "res://Scenes/characters/trambonist.tscn"
+}]
+}]

@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cati0cyvxd64m"]
+[gd_scene load_steps=7 format=3 uid="uid://cati0cyvxd64m"]
 
 [ext_resource type="Script" path="res://Scripts/levels/main_level.gd" id="1_o8c3y"]
 [ext_resource type="PackedScene" uid="uid://cenmsfgbb46ye" path="res://Scenes/characters/acordionist.tscn" id="2_6q62i"]
 [ext_resource type="PackedScene" uid="uid://bvogudb6kkmif" path="res://Scenes/characters/taper.tscn" id="2_ewwbm"]
 [ext_resource type="PackedScene" uid="uid://07n6s0os8lx1" path="res://Scenes/characters/beeper.tscn" id="5_qvtbc"]
+[ext_resource type="PackedScene" uid="uid://csimehotndoda" path="res://Scenes/characters/bombaper.tscn" id="6_1w1v4"]
 [ext_resource type="PackedScene" uid="uid://c3eqeseyi26ou" path="res://Scenes/characters/trambonist.tscn" id="6_166a4"]
 
 [node name="MainLevel" type="Node2D"]
@@ -23,4 +24,8 @@ scale = Vector2(0.3, 0.3)
 
 [node name="Beeper" parent="." instance=ExtResource("5_qvtbc")]
 position = Vector2(201, 475)
+scale = Vector2(0.3, 0.3)
+
+[node name="Bombaper" parent="." instance=ExtResource("6_1w1v4")]
+position = Vector2(1026, 496)
 scale = Vector2(0.3, 0.3)

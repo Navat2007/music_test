@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://csimehotndoda"]
+
+[ext_resource type="PackedScene" uid="uid://hu8ildxogcid" path="res://Scenes/characters/character.tscn" id="1_sbrui"]
+[ext_resource type="AudioStream" uid="uid://swmg8spmwedv" path="res://Audio/characters/bombaper.ogg" id="2_1ufd0"]
+
+[sub_resource type="DragonBonesFactory" id="DragonBonesFactory_74j0a"]
+dragon_bones_ske_file_list = PackedStringArray("res://Art/characters/bombaper/bombaper_ske.json")
+texture_atlas_json_file_list = PackedStringArray("res://Art/characters/bombaper/bombaper_tex.json")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0aocn"]
+size = Vector2(704, 995)
+
+[node name="Bombaper" instance=ExtResource("1_sbrui")]
+music_clip = ExtResource("2_1ufd0")
+
+[node name="DragonBones" parent="." index="1"]
+factory = SubResource("DragonBonesFactory_74j0a")
+armature_settings = {
+"current_animation": "idle",
+"sub_armatures": {},
+"use_parent_material": true
+}
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(-10, 6.5)
+shape = SubResource("RectangleShape2D_0aocn")
