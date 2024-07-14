@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://2frf06mgrsul"]
+
+[ext_resource type="PackedScene" uid="uid://hu8ildxogcid" path="res://Scenes/characters/character.tscn" id="1_7b5me"]
+[ext_resource type="AudioStream" uid="uid://dpxtldrvsyol2" path="res://Audio/characters/taper.ogg" id="2_giig8"]
+
+[sub_resource type="DragonBonesFactory" id="DragonBonesFactory_pmepw"]
+dragon_bones_ske_file_list = PackedStringArray("res://Art/characters/taper96/taper96test_ske.json")
+texture_atlas_json_file_list = PackedStringArray("res://Art/characters/taper96/taper96test_tex.json")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wy6nr"]
+size = Vector2(379, 1176)
+
+[node name="Taper96" instance=ExtResource("1_7b5me")]
+music_clip = ExtResource("2_giig8")
+
+[node name="DragonBones" parent="." index="1"]
+factory = SubResource("DragonBonesFactory_pmepw")
+armature_settings = {
+"current_animation": "ready",
+"sub_armatures": {},
+"use_parent_material": true
+}
+
+[node name="CollisionShape2D" parent="Area2D" index="0"]
+position = Vector2(-1.5, -4)
+shape = SubResource("RectangleShape2D_wy6nr")

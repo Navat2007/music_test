@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://hu8ildxogcid" path="res://Scenes/characters/character.tscn" id="1_nkf7e"]
 [ext_resource type="AudioStream" uid="uid://dw47s7v7ixinw" path="res://Audio/characters/beeper.ogg" id="2_xejwe"]
 
-[sub_resource type="DragonBonesFactory" id="DragonBonesFactory_ap5w8"]
+[sub_resource type="DragonBonesFactory" id="DragonBonesFactory_tspki"]
 dragon_bones_ske_file_list = PackedStringArray("res://Art/characters/beeper/beeper_ske.json")
 texture_atlas_json_file_list = PackedStringArray("res://Art/characters/beeper/beeper_tex.json")
 
@@ -14,7 +14,7 @@ size = Vector2(528, 1124)
 music_clip = ExtResource("2_xejwe")
 
 [node name="DragonBones" parent="." index="1"]
-factory = SubResource("DragonBonesFactory_ap5w8")
+factory = SubResource("DragonBonesFactory_tspki")
 armature_settings = {
 "current_animation": "idle",
 "sub_armatures": {},

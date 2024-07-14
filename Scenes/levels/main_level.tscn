@@ -1,8 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cati0cyvxd64m"]
+[gd_scene load_steps=10 format=3 uid="uid://cati0cyvxd64m"]
 
 [ext_resource type="Script" path="res://Scripts/levels/main_level.gd" id="1_o8c3y"]
 [ext_resource type="PackedScene" uid="uid://cenmsfgbb46ye" path="res://Scenes/characters/acordionist.tscn" id="2_6q62i"]
+[ext_resource type="PackedScene" uid="uid://2frf06mgrsul" path="res://Scenes/characters/taper_96.tscn" id="2_e84gi"]
 [ext_resource type="PackedScene" uid="uid://bvogudb6kkmif" path="res://Scenes/characters/taper.tscn" id="2_ewwbm"]
+[ext_resource type="PackedScene" uid="uid://dqpu4avpfx3rg" path="res://Scenes/characters/contrbasser.tscn" id="2_s4sed"]
 [ext_resource type="PackedScene" uid="uid://07n6s0os8lx1" path="res://Scenes/characters/beeper.tscn" id="5_qvtbc"]
 [ext_resource type="PackedScene" uid="uid://csimehotndoda" path="res://Scenes/characters/bombaper.tscn" id="6_1w1v4"]
 [ext_resource type="PackedScene" uid="uid://c3eqeseyi26ou" path="res://Scenes/characters/trambonist.tscn" id="6_166a4"]
@@ -10,6 +12,14 @@
 
 [node name="MainLevel" type="Node2D"]
 script = ExtResource("1_o8c3y")
+
+[node name="Contrbasser" parent="." instance=ExtResource("2_s4sed")]
+position = Vector2(158, 140)
+scale = Vector2(0.3, 0.3)
+
+[node name="Taper96" parent="." instance=ExtResource("2_e84gi")]
+position = Vector2(787, 179)
+scale = Vector2(0.3, 0.3)
 
 [node name="Acordionist" parent="." instance=ExtResource("2_6q62i")]
 position = Vector2(822, 543)
