@@ -13,6 +13,9 @@ size = Vector2(376, 1196)
 [node name="Taper" instance=ExtResource("1_s4iwy")]
 music_clip = ExtResource("2_48gdk")
 
+[node name="AudioStreamPlayer" parent="." index="0"]
+max_polyphony = 1
+
 [node name="DragonBones" parent="." index="1"]
 factory = SubResource("DragonBonesFactory_5dd4t")
 armature_settings = {

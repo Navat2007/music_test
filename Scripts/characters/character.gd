@@ -47,12 +47,12 @@ func _on_click_area_input_event(_viewport, event, _shape_idx) -> void:
 				_armature.play_from_progress("ready", start_progress);
 			States.Play:
 				current_state = States.Idle;
-				_armature.play("idle");
+				_armature.play_from_progress("idle", 0);
 				modulate = Color(0.176, 0.176, 0.176, 0.812);
 				audio_player.stop()
 			States.Ready:
 				current_state = States.Idle;
-				_armature.play("idle");
+				_armature.play_from_progress("idle", 0);
 				modulate = Color(0.176, 0.176, 0.176, 0.812);
 				audio_player.stop()
 
@@ -61,8 +61,9 @@ func _on_cycle_tick() -> void:
 		States.Idle:
 			pass;
 		States.Play:
-			audio_player.play();
+			audio_player.play(0);
+			_armature.play_from_progress("play", 0);
 		States.Ready:
 			current_state = States.Play;
-			_armature.play("play");
-			audio_player.play();
+			_armature.play_from_progress("play", 0);
+			audio_player.play(0);

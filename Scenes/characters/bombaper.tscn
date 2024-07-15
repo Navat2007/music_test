@@ -26,7 +26,4 @@ position = Vector2(-10, 6.5)
 shape = SubResource("RectangleShape2D_0aocn")
 
 [node name="Label" parent="." index="3"]
-z_index = 1000
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_constants/outline_size = 4
 text = "Bombaper"

@@ -4,11 +4,11 @@
 [ext_resource type="AudioStream" uid="uid://dxfcuacew43dx" path="res://Audio/characters/contrbasser.ogg" id="2_rsb7o"]
 
 [sub_resource type="DragonBonesFactory" id="DragonBonesFactory_yfds8"]
-dragon_bones_ske_file_list = PackedStringArray("res://Art/characters/contrbasser/contbasser_ske.json")
-texture_atlas_json_file_list = PackedStringArray("res://Art/characters/contrbasser/contbasser_tex.json")
+dragon_bones_ske_file_list = PackedStringArray("res://Art/characters/contrbasser/contrbasser_ske.json")
+texture_atlas_json_file_list = PackedStringArray("res://Art/characters/contrbasser/contrbasser_tex.json")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_46m60"]
-size = Vector2(105, 267)
+size = Vector2(397, 1008)
 
 [node name="Contrbasser" instance=ExtResource("1_stgwu")]
 music_clip = ExtResource("2_rsb7o")
@@ -21,5 +21,5 @@ armature_settings = {
 }
 
 [node name="CollisionShape2D" parent="Area2D" index="0"]
-position = Vector2(-0.5, 4.5)
+position = Vector2(7.5, 45)
 shape = SubResource("RectangleShape2D_46m60")
